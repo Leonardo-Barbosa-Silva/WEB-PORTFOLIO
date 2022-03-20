@@ -1,10 +1,10 @@
 # WEB-PORTFOLIO
-Projeto de portfolio
+Projeto de portfólio
 
-# TAREFAS
-As tarefas serão definidas no próprio project GitHub
+## TAREFAS
+As tarefas serão definidas no próprio "project" do GitHub
 
-# Ícones
+## Ícones
 :package: Nova funcionalidade
 :up: Atualização
 :beetle: Correção de Bugs
