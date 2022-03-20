@@ -28,7 +28,7 @@
             <div class="banner">
                 <h1>Web Developer & Front End <br>Designer</h1>
                 <p>Leonardo Barbosa</p>
-                <button>More</button>
+                <button class="btn">More</button>
             </div>
         </header>
 
@@ -72,8 +72,8 @@
                 </div>
                 <div class="knowledge">
                     <div class="header-knowledge">
-                        <i class="fas fa-pencil-alt"></i>
-                        <h3>Design</h3>
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
                     </div>
                     <div class="text-knowledge">
                     </div>
@@ -128,9 +128,35 @@
                             <textarea class="field" id="message"></textarea>
                             <label for="message" class="field-label">Message</label>
                         </div>
-                        <button type="submit" class="btn-submit">Send</button>
+                        <button type="submit" class="btn btn-contact">Send</button>
                     </form>
                 </div>
+            </div>
+        </section>
+
+        <section class="section-budget">
+            <div class="budget-wrapper">
+                <h1>Make a budget</h1>
+                <form>
+                    <label for="qtd">Quantidade de Páginas</label>
+                    <input type="number" min="1" id="qtd" name="qtd">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" id="js" name="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" id="layout-y" name="layout">
+                            <label for="layout-y">Need layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="layout-n" name="layout">
+                            <label for="layout-n">Don't need layout</label>
+                        </div>
+                    </div>
+                    <label for="time">Time</label>
+                    <input type="range" id="time" name="time">
+                    <button class="btn btn-budget">Send</button>
+                </form>
             </div>
         </section>
     </div>
