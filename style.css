@@ -27,6 +27,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    z-index: 200;
 }
 
 .line {
@@ -69,6 +70,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+    z-index: 200;
 }
 
 .hamburguer span::before {
@@ -185,6 +187,7 @@ header {
     width: 20rem;
     height: 100vh;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -353,7 +356,7 @@ header {
     width: 80%;
     height: 40rem;
     display: flex;
-    box-shadow: 1rem 1rem 1rem rgb(0,0,0);
+    box-shadow: .8rem .8rem .8rem rgb(0,0,0);
 }
 
 .contact-left {
@@ -444,20 +447,33 @@ header {
 .section-budget {
     width: 100%;
     height: 100vh;
-    background: url();
     object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.bg-budget-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.bg-budget-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
 }
 
 .budget-wrapper {
     width: 60%;
     height: 80%;
-    background-color: #aaa;
+    background-color: #fff;
     border-radius: 10px;
     position: relative;
-    box-shadow: 1rem 1rem 2rem #000;
 }
 
 .section-budget h1 {
@@ -472,33 +488,42 @@ header {
     color: #fff;
     border-radius: 10px;
     padding: .5rem 5rem;
-    box-shadow: .3rem .3rem 1rem #000;
+    box-shadow: .2rem .2rem 1rem #000;
     letter-spacing: .4rem;
 }
 
 .section-budget form {
-    margin: 6rem;
+    margin: 7rem;
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 3rem;
     row-gap: 2rem;
 }
 
+#js {
+    margin-top: 1.1rem;
+}
+
 .section-budget label {
-    font-family: var(--font-secundary);
+    font-family: var(--font-primary);
+    font-weight: lighter;
+    font-size: 1.8rem;
+}
+
+#price {
     font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: .5rem;
 }
 
 .section-budget input[type="number"] {
     width: 5rem;
     outline: none;
-    font-family: var(--font-secundary);
-    font-size: 2.5rem;
+    font-family: var(--font-primary);
+    font-weight: lighter;
+    font-size: 2rem;
     border-radius: 5px;
     border: none;
-    padding: .2rem;
+    padding-left: 1rem;
+    background-color: #ccc;
 }
 
 .btn-budget {
@@ -509,4 +534,37 @@ header {
 .btn-budget:active {
     opacity: 0.5;
     color: #000;
+}
+
+.footer-content {
+    width: 100%;
+    height: 10rem;
+    background-color:rgb(35, 35, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    font-family: var(--font-primary);
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: .09rem;
+}
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: .3rem .3rem .3rem #000;
+    background: linear-gradient(to right, rgb(80, 0, 80), rgb(30, 0, 70));
+    background: -webkit-linear-gradient(to right, rgb(80, 0, 80), rgb(30, 0, 70));
 }
