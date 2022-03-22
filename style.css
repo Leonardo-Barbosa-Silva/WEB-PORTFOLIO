@@ -106,14 +106,14 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.28;
+    opacity: 0.35;
     animation: zoom 8s;
     -webkit-animation: zoom 8s;
 }
 
 @keyframes zoom {
     0% {
-        transform: scale(1.8);
+        transform: scale(2);
     }
     100% {
         transform: scale(1.0);
@@ -124,14 +124,15 @@ header {
     position: absolute;
     top: 30%;
     left: 10%;
+    width: 50%;
 }
 
 .banner h1 {
     color: #ffffff;
-    font-size: 3.5rem;
+    font-size: 4vw;
     font-family: var(--font-primary);
     font-weight: 400;
-    text-shadow: .3rem .3rem 4px rgb(0,0,0);
+    text-shadow: .3rem .3rem .05rem rgb(0,0,0);
     line-height: 3.5rem;
     margin-bottom: 2rem;
     animation: moveBanner 1s;
@@ -141,8 +142,8 @@ header {
 .banner p {
     font-family: var(--font-secundary);
     color: #ffffff;
-    text-shadow: .3rem .3rem 1px #000;
-    font-size: 2rem;
+    text-shadow: .3rem .3rem .05rem #000;
+    font-size: 2.5vw;
     margin-bottom: 2rem;
     animation: moveBanner 1.3s forwards;
     -webkit-animation: moveBanner 1.3s;
@@ -152,11 +153,12 @@ header {
     font-family: var(--font-action);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    position: absolute;
     color: #fff;
     background: linear-gradient(to right, rgb(80, 0, 80), rgb(30, 0, 70));
     background: -webkit-linear-gradient(to right, rgb(80, 0, 80), rgb(30, 0, 70));
-    padding: 1rem 2rem;
+    width: 15%;
+    padding: .8rem;
+    font-size: 1vw;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -198,7 +200,7 @@ header {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .menu-item {
@@ -212,7 +214,7 @@ header {
 
 .menu-link {
     font-family: var(--font-action);
-    font-size: 2rem;
+    font-size: 2.2vw;
     color: rgb(35, 35, 35);
 }
 
@@ -248,7 +250,7 @@ header {
     width: 4rem;
     height: 2rem;
     color: rgb(30, 0, 70);
-    font-size: 3rem;
+    font-size: 3.2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,6 +265,7 @@ header {
     background: linear-gradient(to right, rgb(80, 0, 80), rgb(30, 0, 70));
     background: -webkit-linear-gradient(to right, rgb(80, 0, 80), rgb(30, 0, 70));
     height: 100vh;
+    width: 100%;
 }
 
 .section-knowledge-header {
@@ -283,6 +286,7 @@ header {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(11, 3rem);
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -324,12 +328,13 @@ header {
 }
 
 .header-knowledge i {
-    font-size: 3.3rem;
+    font-size: 3.7vw;
 }
 
 .header-knowledge h3 {
     font-family: var(--font-primary);
     padding-left: .6rem;
+    font-size: 1.3vw;
 }
 
 .knowledge-skills-wrapper {
@@ -354,14 +359,14 @@ header {
 
 .contact-wrapper {
     width: 80%;
-    height: 40rem;
+    height: 88%;
     display: flex;
     box-shadow: .8rem .8rem .8rem rgb(0,0,0);
 }
 
 .contact-left {
     width: 45%;
-    background: rgb(40, 40, 40);
+    background: rgb(35, 35, 35);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,7 +374,8 @@ header {
 
 .contact-left i {
     color: #fff;
-    font-size: 10rem;
+    font-weight: bold;
+    font-size: 12vw;
 }
 
 .contact-right {
@@ -398,7 +404,7 @@ header {
 .field {
     border: none;
     background: transparent;
-    width: 30rem;
+    width: 100%;
     font-size: 1.5rem;
     font-family: var(--font-secundary);
     border-bottom: 2px dashed rgb(35, 35, 35);
@@ -409,12 +415,13 @@ header {
 
 .input-group {
     position: relative;
+    width:100%;
 }
 
 .input-group textarea {
-    max-width: 30rem;
-    max-height: 2rem;
-    min-width: 30rem;
+    max-width: 100%;
+    max-height: 4rem;
+    min-width: 5rem;
     min-height: 2rem;
 }
 
@@ -433,10 +440,20 @@ header {
     font-weight: bold;
 }
 
+.btn-contact-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .btn-contact {
     position: static;
-    padding: .8rem 8rem;
-    margin: 1rem;
+    padding: .5rem;
+    margin: 0;
+    width: 70%;
+    font-size: 1rem;
+    margin-top: 1.5rem;
 }
 
 .btn-contact:active {
@@ -472,8 +489,12 @@ header {
     width: 60%;
     height: 80%;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 1rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .3rem .3rem .2rem #000;
 }
 
 .section-budget h1 {
@@ -483,17 +504,18 @@ header {
     background: linear-gradient(to right, rgb(80, 0, 80), rgb(30, 0, 70));
     background: -webkit-linear-gradient(to right, rgb(80, 0, 80), rgb(30, 0, 70));
     font-family: var(--font-primary);
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: lighter;
     color: #fff;
-    border-radius: 10px;
-    padding: .5rem 5rem;
-    box-shadow: .2rem .2rem 1rem #000;
-    letter-spacing: .4rem;
+    border-radius: .5rem;
+    padding: .2rem 2rem;
+    box-shadow: .2rem .2rem .2rem #000;
+    letter-spacing: .3rem;
 }
 
 .section-budget form {
-    margin: 7rem;
+    width: 90%;
+    height: 70%;
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 3rem;
@@ -507,7 +529,7 @@ header {
 .section-budget label {
     font-family: var(--font-primary);
     font-weight: lighter;
-    font-size: 1.8rem;
+    font-size: 2vw;
 }
 
 #price {
@@ -529,6 +551,7 @@ header {
 .btn-budget {
     position: static;
     grid-column: 2;
+    width: 100%;
 }
 
 .btn-budget:active {
@@ -549,7 +572,7 @@ header {
     font-family: var(--font-primary);
     font-weight: lighter;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     letter-spacing: .09rem;
 }
 
