@@ -1,5 +1,5 @@
 # WEB-PORTFOLIO
-Projeto de portfólio
+Projeto para fins de conhecimento em desenvolvimento frontend com HTML5, CSS3 e JS.
 
 ## TAREFAS
 As tarefas serão definidas no próprio "project" do GitHub
